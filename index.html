@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+      
+        
+        <title>FORM</title>
+
+
+    </head>
+    <body>
+        
+        <form id ='login' >
+            <h1 >LOGIN </h1>
+           <br>
+            <label>USERNAME</label><br>
+            <input   class='a' id="username"  type="email"/><br>
+            <label>PASSWORD</label><br>
+            <input   class='a' id ="password" type ="password"/><br>
+            <input  class='b' onclick = "func()" type="button" value='LOGIN'/>
+
+        </form>
+        <script>
+           
+            function func(){
+                
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === 'username@gmail.com' && password === 'password') {
+                alert('LOGIN SUCESSFULL');
+                window.location=('/form.html')
+            } else {
+                // Perform further actions like making an API call to authenticate the user
+                alert("invalid username and password")
+                
+            }}
+        
+    </script>
+
+    </body>
+</html>
